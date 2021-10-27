@@ -543,6 +543,7 @@ h4 {
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
   border-bottom: solid 4px;
+  transition: all 0.3s ease-in;
 }
 
 .service .service-box > i {
@@ -584,6 +585,283 @@ h4 {
   line-height: 0;
 }
 
-.service .service-box.red-box:hover{
-  
+.service .service-box:hover h4,
+.service .service-box:hover p,
+.service .service-box:hover .btn-service {
+  color: #fff !important;
 }
+
+.service .service-box:hover i {
+  background-color: white !important;
+}
+
+/* --------- red box ------------ */
+.service .service-box.red-box {
+  border-color: #cf5353ee;
+}
+
+.service .service-box.red-box > i {
+  background-color: #cf5353ee;
+}
+
+.service .service-box.red-box .btn-service {
+  color: #cf5353ee;
+}
+
+.service .service-box.red-box:hover {
+  background-color: #cf5353ee;
+}
+
+.service .service-box.red-box:hover > i {
+  color: #cf5353ee;
+}
+
+.service .service-box.red-box .btn-service {
+  color: #cf5353ee;
+}
+
+/* --------- blue box ------------ */
+.service .service-box.blue-box {
+  border-color: #485bc4ee;
+}
+
+.service .service-box.blue-box > i {
+  background-color: #485bc4;
+}
+
+.service .service-box.blue-box .btn-service {
+  color: #485bc4ee;
+}
+
+.service .service-box.blue-box:hover {
+  background-color: #485bc4ee;
+}
+
+.service .service-box.blue-box:hover > i {
+  color: #485bc4ee;
+}
+
+.service .service-box.blue-box .btn-service {
+  color: #485bc4ee;
+}
+
+/* --------- yellow box ------------ */
+.service .service-box.yellow-box {
+  border-color: #f68c09;
+}
+
+.service .service-box.yellow-box > i {
+  background-color: #f68c09;
+}
+
+.service .service-box.yellow-box .btn-service {
+  color: #f68c09;
+}
+
+.service .service-box.yellow-box:hover {
+  background-color: #f68c09;
+}
+
+.service .service-box.yellow-box:hover > i {
+  color: #f68c09;
+}
+
+.service .service-box.yellow-box .btn-service {
+  color: #f68c09;
+}
+
+/* --------- green box ------------ */
+.service .service-box.green-box {
+  border-color: #47e247;
+}
+
+.service .service-box.green-box > i {
+  background-color: #47e247;
+}
+
+.service .service-box.green-box .btn-service {
+  color: #47e247;
+}
+
+.service .service-box.green-box:hover {
+  background-color: #47e247;
+}
+
+.service .service-box.green-box:hover > i {
+  color: #47e247;
+}
+
+.service .service-box.green-box .btn-service {
+  color: #47e247;
+}
+
+/* --------- blueviolet box ------------ */
+.service .service-box.blueviolet-box {
+  border-color: #8a2be2;
+}
+
+.service .service-box.blueviolet-box > i {
+  background-color: #8a2be2;
+}
+
+.service .service-box.blueviolet-box .btn-service {
+  color: #8a2be2;
+}
+
+.service .service-box.blueviolet-box:hover {
+  background-color: #8a2be2;
+}
+
+.service .service-box.blueviolet-box:hover > i {
+  color: #8a2be2;
+}
+
+.service .service-box.blueviolet-box .btn-service {
+  color: #8a2be2;
+}
+
+/* --------- deeppink box ------------ */
+.service .service-box.blueviolet-box {
+  border-color: #ff1493;
+}
+
+.service .service-box.blueviolet-box > i {
+  background-color: #ff1493;
+}
+
+.service .service-box.blueviolet-box .btn-service {
+  color: #ff1493;
+}
+
+.service .service-box.blueviolet-box:hover {
+  background-color: #ff1493;
+}
+
+.service .service-box.blueviolet-box:hover > i {
+  color: #ff1493;
+}
+
+.service .service-box.blueviolet-box .btn-service {
+  color: #ff1493;
+}
+
+/* --------- dimgray box ------------ */
+.service .service-box.dimgray-box {
+  border-color: #696969;
+}
+
+.service .service-box.dimgray-box > i {
+  background-color: #696969;
+}
+
+.service .service-box.dimgray-box .btn-service {
+  color: #696969;
+}
+
+.service .service-box.dimgray-box:hover {
+  background-color: #696969;
+}
+
+.service .service-box.dimgray-box:hover > i {
+  color: #696969;
+}
+
+.service .service-box.dimgray-box .btn-service {
+  color: #696969;
+}
+
+/* =============== Pricing Plans ============== */
+.pricing-box {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(1, 41, 112, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+}
+
+.pricing-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  background-color: #44444418;
+}
+
+.pricing-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.pricing-box .price {
+  font-size: 36px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.pricing-box .price sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing-box .price span {
+  color: #bababa;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.pricing-box img {
+  padding: 25px 30px;
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  color: #444444;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.pricing-box ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-box ul li.na {
+  text-decoration: line-through;
+  color: #afafb3;
+}
+
+.pricing-box .btn-buy {
+  padding: 8px 25px;
+  color: #4154f1;
+  border: solid #4154f1 2px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  /* font-weight: 500; */
+}
+
+.pricing-box .btn-buy:hover {
+  background-color: #4154f1;
+  color: #fff;
+}
+
+.pricing-box .features {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  background-color: #4154f1;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+  padding: 1px 0 3px 0;
+}
+
+
+
