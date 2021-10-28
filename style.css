@@ -278,13 +278,15 @@ h4 {
 
 #main section .section-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 #main section .section-header h2 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--btnBg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #main section .section-header p {
@@ -429,6 +431,7 @@ h4 {
   object-fit: cover;
   margin-top: 25px;
 }
+
 .features-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -864,7 +867,7 @@ h4 {
 }
 
 /* -------------F. A. Q. -------------------- */
-.faq .accordion-collapse{
+.faq .accordion-collapse {
   border: 0;
 }
 
@@ -892,6 +895,198 @@ h4 {
   border: 0;
 }
 
-
-
 /* ---------------- portfolio ------------------- */
+
+.portfolio #portfolio-flters {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  text-align: center;
+  border-radius: 50px;
+  background: #fff;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #444444;
+  margin: 0px 4px 8px 4px;
+  padding: 8px 20px 10px 20px;
+  border-radius: 50px;
+  border: solid 1px #ffff;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.portfolio .portfolio-wrap {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.749);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: 1s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before,
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid rgba(1, 41, 112, 0.2);
+  border-left: 3px solid rgba(1, 41, 112, 0.2);
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid rgba(1, 41, 112, 0.2);
+  border-right: 3px solid rgba(1, 41, 112, 0.2);
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  color: var(--textcolor);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: var(--textcolor);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  background: var(--primary);
+  margin: 10px 2px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a i {
+  font-size: 24px;
+  line-height: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: #6a76e4;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/* ----------------Testimonials ------------------- */
+.testimonials-slider .testimonial-item {
+  box-sizing: content-box;
+  margin: 40px 30px;
+  padding: 30px;
+  min-height: 320px;
+  box-shadow: 0 0 20px rgb(1, 41, 112, 0.5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonials-slider .testimonial-item .stars i {
+  color: gold;
+  font-size: 18px;
+  margin: 0 1px;
+}
+
+.testimonials-slider .testimonial-item > p {
+  color: #444444;
+  font: 10px;
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.testimonials-slider .testimonial-item .profile img {
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}

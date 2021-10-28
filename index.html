@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Templete 1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
     <!-- ---- google fonts --------- -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&family=Ubuntu&display=swap"
@@ -19,6 +18,8 @@
     <!-- --- font awesome -------- -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
+    <!--------- swiper ---------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -397,8 +398,7 @@
         </section>
 
         <!-- ================== Service ===================== -->
-        <section id="service" class="service
-        ">
+        <section id="service" class="service">
             <div class="container">
                 <div class="section-header">
                     <h2>Service</h2>
@@ -475,6 +475,7 @@
             </div>
         </section>
 
+        <!-- ================== Pricing ===================== -->
         <section id="pricing" class="pricing">
             <div class="container">
                 <div class="section-header">
@@ -550,7 +551,7 @@
             </div>
         </section>
 
-        <!-- -------------------- F. Q. A. ------------------------ -->
+        <!--=================== F. Q. A. ====================== -->
         <section class="faq" id="faq">
             <div class="container">
                 <div class="section-header">
@@ -692,19 +693,20 @@
                 </div>
         </section>
 
+        <!--=================== Portfolio ====================== -->
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header mb-0">
                     <h2>Portfolio</h2>
                     <p>Check our Latest work</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">App</li>
-                            <li data-filter=".filter-web">App</li>
+                            <li data-filter=".filter-app">app</li>
+                            <li data-filter=".filter-card">web</li>
+                            <li data-filter=".filter-web">mob</li>
                         </ul>
                     </div>
                 </div>
@@ -723,16 +725,200 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1"><i class='bx bx-plus'></i></a>
+                                    <a href="#" title="More Details"><i class='bx bx-link'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!--=================== Testimonials ====================== -->
+        <section id="testimonials" class="testimonials-slider">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What they are saying about us</p>
+                </div>
+                <div class="testimonials-slider swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i
+                                        class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus. Accusantium</p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i
+                                        class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus.</p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i
+                                        class="bx bxs-star"></i><i class="bx bxs-star"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus.</p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
         </section>
 
 
     </main>
 
+
     <script src="assets/js/purecounter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <script src="script.js"></script> -->
 
 </body>
 
