@@ -1161,7 +1161,7 @@ h4 {
   overflow: hidden;
 }
 
-.team .member .member-img::after{
+.team .member .member-img::after {
   position: absolute;
   content: '';
   left: 0;
@@ -1192,7 +1192,7 @@ h4 {
   margin: 15px 12px;
 }
 
-.team .member .social a:hover{
+.team .member .social a:hover {
   color: rgba(1, 41, 112, 0.8);
 }
 
@@ -1212,22 +1212,20 @@ h4 {
   margin-bottom: 5px;
 }
 
-.team .member .member-info span{
+.team .member .member-info span {
   color: #aaaaaa;
   display: block;
   font-size: 14px;
   font-weight: 400;
-
 }
 
-.team .member .member-info p{
+.team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
   color: #5e5e5e;
 }
-
 
 .team .member:hover {
   transform: scale(1.1);
@@ -1237,4 +1235,31 @@ h4 {
 .team .member:hover .social {
   right: 8px;
   opacity: 1;
+}
+
+/* ---------------- Clients ----------------- */
+
+.client .clients-slider .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.client .clients-slider .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.clients .clients-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: soil 1px var(--primary);
+}
+.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary);
 }
