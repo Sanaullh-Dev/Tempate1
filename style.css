@@ -1247,13 +1247,12 @@ h4 {
   opacity: 1;
 }
 
-.clients-slider .swiper-pagination  {
+.clients-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.clients-slider .swiper-pagination 
-.swiper-pagination-bullet {
+.clients-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1261,37 +1260,91 @@ h4 {
   border: solid 1px #4154f1;
 }
 
-.clients-slider .swiper-pagination 
-.swiper-pagination-bullet-active {
+.clients-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--primary);
 }
 
-
 /* ============= blog post ============== */
-.post {
+.post-box {
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
-  padding-bottom: 15px;
-  box-shadow: 0 0 20px rgb(1, 41, 112, 0.4);
+  padding: 30px;
+  box-shadow: 0 0 30px rgb(1, 41, 112, 0.08);
 }
 
-.post .post-date {
-  color: #8b8a8a;
+.post-box .post-photo {
+  overflow: hidden;
+  margin: -30px -30px 15px -30px;
+  position: relative;
+}
+
+.post-box .post-photo img {
+  transition: 0.5s;
+}
+
+.post-box .post-date {
+  color: #01297099;
   font-size: 18px;
   font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
 }
-.post .post-title {
-  font-size: 23px;
-  font-weight: 800;
+
+.post-box .post-title {
+  font-size: 24px;
+  font-weight: 700;
   color: var(--textcolor);
+  margin-bottom: 18px;
+  transition: 0.3s;
 }
-.post .post-btn {
+
+.post-box .post-btn {
+  display: flex;
+  align-items: center;
   color: var(--primary);
-  font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
 }
-.post .post-date, .post .post-title, .post .post-btn {
-  padding: 10px 20px;
+.post-box .post-btn i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.post-box:hover .post-title {
+  color: var(--primary);
+}
+
+.post-box:hover .post-photo img {
+  transform: rotate(6deg) scale(1.2);
+}
+
+
+/* =================== contact us ================ */
+.contact-us .info-box {
+  padding: 30px;
+  background-color: #FAFBFF;
+}
+
+.contact-us .info-box i {
+  font-size: 50px;
+  color: var(--primary);
+  font-weight: 500;
+
+}
+
+.contact-us .info-box h3{
+  font-size: 22px;
+  color: var(--textcolor);
+  font-weight: 900;
+}
+
+.contact-us .info-box p{
+  font-size: 14px;
+  color: #444;
+  line-height: 1;
+  margin-bottom: 5px;
 }
