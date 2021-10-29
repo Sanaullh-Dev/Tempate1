@@ -19,7 +19,7 @@
         slidesPerView: 2,
         spaceBetween: 40
       },
-      480: {
+      580: {
         slidesPerView: 3,
         spaceBetween: 60
       },
