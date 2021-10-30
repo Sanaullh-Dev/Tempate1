@@ -5,6 +5,7 @@
   --primaryfouce: #5969f3;
   --headingText: #929296;
   --btnBg: #4154f1;
+  --foreground : #FAFBFF;
 }
 
 * {
@@ -248,7 +249,7 @@ h4 {
   line-height: 0;
   border-radius: 4px;
   background-color: var(--btnBg);
-  padding: 15px 40px;
+  padding: 25px 40px;
   color: #fff;
   transition: 0.5s;
 }
@@ -325,7 +326,7 @@ h4 {
 
 .about .btn-read-more {
   line-height: 0;
-  padding: 15px 40px;
+  padding: 25px 40px;
   border-radius: 4px;
   background-color: var(--btnBg);
   color: #fff;
@@ -1348,3 +1349,119 @@ h4 {
   line-height: 1;
   margin-bottom: 5px;
 }
+
+.contact-us .email-form {
+  background-color: #FAFBFF;
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+}
+.contact-us .email-form input {
+  padding: 10px 15px;
+}
+
+.contact-us .email-form textarea {
+  padding: 12px 15px;
+  width: 100%;
+  resize: none;
+  box-shadow: none;
+ 
+}
+
+.contact-us .email-form input,
+.contact-us .email-form textarea {
+  border-radius: 0px;
+  font-size: 14px;
+  box-shadow: none;
+  border: 1px solid #CED4DA;
+}
+
+.contact-us .email-form input:focus,
+.contact-us .email-form textarea:focus {
+  border-color: var(--btnBg);
+}
+
+.contact-us .email-form button[type='submit'] {
+  background-color: var(--btnBg);
+  border: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-us .email-form button[type='submit']:hover {
+  background: #5969f3;
+}
+
+.contact-us .email-form .error-message {
+  display: none;
+  color: #fff;
+  background-color: #ed3c0d;
+  text-align: left;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact-us .email-form .sent-message {
+  display: none;
+  background: #18d26e;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact-us .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.contact-us .email-form .loading::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+  -webkit-animation: animate-loading 1s linear infinite;
+}
+
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  /* ------------------ Newsletter ---------------------------- */
+  .footer-newsletter {
+    background: var(--foreground);
+    text-align: center;
+  }
+
+  .newsletter h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--textcolor);
+
+  }
