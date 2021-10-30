@@ -1568,3 +1568,14 @@ h4 {
   .footer-contact p {
     line-height: 2;
   }
+
+  .copyright {
+    padding-top: 25px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    color: var(--textcolor);
+  }
+  .credits {
+    font-size: 14px;
+    color:var(--textcolor)
+  }
