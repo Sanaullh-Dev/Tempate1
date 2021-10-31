@@ -5,7 +5,7 @@
   --primaryfouce: #5969f3;
   --headingText: #929296;
   --btnBg: #4154f1;
-  --foreground : #FAFBFF;
+  --foreground : #F6F9FF;
 }
 
 * {
@@ -1452,16 +1452,130 @@ h4 {
   }
 
 
+ /* ------------------- footer -------------- */
+ .footer {
+   background: #f6f9ff;
+   padding-bottom: 30px;
+   font-size: 14px;
+ }
 
   /* ------------------ Newsletter ---------------------------- */
-  .footer-newsletter {
-    background: var(--foreground);
+  .newsletter {
+    background: #f6f9ff;
     text-align: center;
+    padding: 50px 0px;
+    border-top: 1px solid #e1ecff;
   }
 
   .newsletter h3 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
+    margin-bottom: 10px;
     color: var(--textcolor);
+  }
+  .newsletter p {
+    font-size: 16px;
+  }
 
+  .newsletter form {
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid #e1ecff;
+  }
+  .newsletter form input[type=email] {
+    border: 0;
+    padding: 8px;
+    width: calc(100% - 140px);
+  }
+  .newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    font-size: 16px;
+    padding: 0 32px;
+    margin: 3px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .footer .footer-bar {
+    padding: 60px 0 30px 0;
+    background: #fff url('assets/img/footer-bg.png') no-repeat right top;
+    background-size: contain;
+    border-top: 1px solid #e1ecff;
+    border-bottom: 1px solid #e1ecff;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-info .logo{
+   font-size: 25px; 
+   color: var(--textcolor);
+   font-weight: 600;
+   padding-bottom: 15px;
+   line-height: 1;
+  }
+
+  .footer-info p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer-info .social-links i{
+    font-size: 20px;
+    margin-right: 8px;
+    color: #8094B7;
+    transition: 0.3s;
+  }
+  .footer-info .social-links i:hover {
+    color: var(--textcolor);
+  }
+
+  .footer-links h4 , .footer-contact h4{
+    color: var(--textcolor);
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: upp;
+  }
+
+  .footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-links ul li {
+    line-height: 2;
+  }
+
+  .footer-links ul li a{
+    color: var(--textcolor);
+  }
+
+  .footer-links ul li i{
+    font-size: 18px;
+    color: rgba(68, 68, 68, 0.5);
+  }
+  .footer-contact p {
+    line-height: 2;
+  }
+
+  .copyright {
+    padding-top: 25px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    color: var(--textcolor);
+  }
+  .credits {
+    font-size: 14px;
+    color:var(--textcolor)
   }
