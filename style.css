@@ -39,6 +39,40 @@ h4 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+/* ================= Back To Top ================= */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5x;
+}
+
+.back-to-top i {
+  color: #fff;
+  font-size: 22px;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* # Disable aos animation delay on mobile devices */
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    trasition-delay: 0 !important;
+  }
+}
+
 /* ---------------- header -------------------- */
 
 #header {
@@ -46,7 +80,7 @@ h4 {
   padding: 0;
   padding: 20px 0;
   position: fixed;
-  z-index: 1;
+  z-index: 11111111;
   transition: all 0.5s;
 }
 
@@ -82,6 +116,7 @@ h4 {
 #header .menu-bar {
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 #header .menu-container {
@@ -192,18 +227,13 @@ h4 {
   background: #ffffff;
 }
 
-#header .menu-container .dropdown .deepdropdown .ddmenu-link {
+#header .menu-container .btn-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
 
-.profile-container {
-  margin: auto;
-  padding: 0 15px;
-}
-
-.profile-container a {
-  text-decoration: none;
-  text-align: center;
-  white-space: nowrap;
+#header .menu-container .getStarted {
   padding: 10px 15px;
   background-color: var(--btnBg);
   color: white;
@@ -211,12 +241,25 @@ h4 {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px;
+  align-items: center;
 }
 
-.profile-container a:hover {
+#header .menu-container .getStarted:hover {
   text-decoration: none;
   color: var(--background);
   background-color: var(--primaryfouce);
+}
+
+/* ======== Mobile Navigation ============= */
+.mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 4px;
+  right: 15px;
+  padding: 10px;
+  background-color: var(--primary);
 }
 
 /* ---------------------hero------------------------------------ */

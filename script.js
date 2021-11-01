@@ -16,6 +16,19 @@ $(function () {
 
 
 
+  // ------------back top top --------------------
+  $(window).scroll(function(){
+
+    if ($(this).scrollTop() < 100) {
+      $('.back-to-top').removeClass('active');
+    } else {
+      $('.back-to-top').addClass('active');
+    }
+
+  })
+
+
+
   // ------- Header showing and hide funcation
   var pagescroll = window.pageYOffset;
 
