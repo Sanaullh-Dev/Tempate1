@@ -17,7 +17,7 @@ $(function () {
 
 
   // ------------back top top --------------------
-  $(window).scroll(function(){
+  $(window).scroll(function () {
 
     if ($(this).scrollTop() < 100) {
       $('.back-to-top').removeClass('active');
@@ -33,21 +33,22 @@ $(function () {
   var pagescroll = window.pageYOffset;
 
   $(window).scroll(function () {
-    var currentscroll = window.pageYOffset;
-    console.log(currentscroll);
-    if ($(this).scrollTop() < 100) {
-      $('#header').removeClass('header-scrolled');
-    }
-    else if (pagescroll > currentscroll) {
-      document.getElementById('header').style.top = "0";
-      $('#header').addClass('header-scrolled');
-    }
-    else {
-      document.getElementById('header').style.top = "-80px";
-      $('#header').removeClass('header-scrolled');
-    }
+    if ($(window).width() > 990) {
+      var currentscroll = window.pageYOffset;
+      if ($(this).scrollTop() < 100) {
+        $('#header').removeClass('header-scrolled');
+      }
+      else if (pagescroll > currentscroll) {
+        document.getElementById('header').style.top = "0";
+        $('#header').addClass('header-scrolled');
+      }
+      else {
+        document.getElementById('header').style.top = "-80px";
+        $('#header').removeClass('header-scrolled');
+      }
 
-    pagescroll = currentscroll;
+      pagescroll = currentscroll;
+    }
   });
 
 
