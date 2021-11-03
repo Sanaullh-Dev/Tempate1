@@ -137,7 +137,8 @@ h4 {
 
 .menu-bar a:hover,
 .menu-bar a:focus,
-.menu-bar li:hover > a {
+.menu-bar li:hover > a,
+.menu-bar .menu-link.active {
   color: var(--primary);
 }
 
@@ -256,34 +257,36 @@ h4 {
 }
 
 .menu-bar .mobile-nav-toggle.bx-x {
-  color: var(--primary);  
+  color: var(--primary);
   transition: 0.5s;
 }
 
 .navbar-mobile {
-  background-color:var(--primary);
+  background-color: var(--primary);
   color: #fff;
   transition: 0.3s;
   align-items: center;
+  overflow: hidden;
 }
 
 .navbar-mobile > i {
   color: #fff !important;
 }
 
-.navbar-mobile ul{
+.navbar-mobile > ul {
   position: absolute;
-  top:70px;
+  top: 70px;
   left: 0;
-  right:0;
+  right: 0;
   padding: 0;
   width: auto;
-  margin: 0 25px;
-  display:inline-block;
-  background-color: rgb(1, 22, 61);
+  height: 90vh;
+  padding: 0 25px;
+  display: inline-block;
+  background-color: #fff;
   box-shadow: 0px 0px 20px rgb(1, 41, 112, 0.08);
   transition: all 0.5s ease;
-  text-align: center;
+  overflow-y: scroll;
 }
 
 .navbar-mobile ul li .menu-link {
@@ -291,21 +294,66 @@ h4 {
   width: 100%;
 }
 
+/* .navbar-mobile ul li.dropdown-show,
+.menu-bar .menu-link.active {
+  background-color: var(--primary);
+  color: #fff;
+} */
+/* .navbar-mobile ul li.dropdown-show a,
+.navbar-mobile ul .active {
+  color: #fff;
+} */
+
 .navbar-mobile ul li:hover {
   background-color: var(--primary);
 }
 
 .navbar-mobile ul li a,
 .navbar-mobile ul li:hover a {
-  color: #fff;
+  color: var(--textcolor);
 }
 
-.navbar-mobile .dropdown {position: relative;}
-
 .navbar-mobile .dropdown ul {
-  position: absolute;
-  top: 50px;
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  display: none;
+}
+
+.navbar-mobile .dropdown-show ul {
   display: inline-block;
+  width: 90%;
+  padding: 10px 15px;
+  margin-left: 20px;
+}
+
+.navbar-mobile .dropdown-show ul li {
+  text-align: center;
+}
+
+.navbar-mobile .dropdown-show .dmenu-link {
+  color: #012970;
+  width: 100%;
+}
+
+.navbar-mobile .dropdown-show .deepdropdown ul {
+  display: none;
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-mobile .dropdown-show .deepdropdown-show ul {
+  display: inline-block;
+  width: 90%;
+  padding: 10px 15px;
+}
+
+.navbar-mobile .dropdown-show .deepdropdown-show .ddmenu-link{
+
+  color: var(--textcolor);
+  width: 80%;
+  
 }
 
 /* ---------------------hero------------------------------------ */

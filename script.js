@@ -73,10 +73,51 @@ $(function () {
     console.log("click mobile toggle");
     $(this).toggleClass('bx-menu');
     $(this).toggleClass('bx-x');
-    $('.menu-bar').toggleClass('navbar-mobile');
+    $('#menu-bar').toggleClass('navbar-mobile');
+  });
+
+  // ------------ dropdown menu showing -----------------
+  $(".dropdown > .menu-link").click(function () {
+    if ($(window).width() < 991) {
+      $('.dropdown').toggleClass('dropdown-show');
+    }
+  });
+
+  // ------------ Deep dropdown menu showing -----------------
+  $(".deepdropdown > .dmenu-link").click(function () {
+    if ($(window).width() < 991) {
+      $('.deepdropdown').toggleClass('deepdropdown-show');
+    }
   });
 
 
+
+  // ------ Navigation active state on scroll -------------
+  var nav_sections = $('section');
+  var main_nav = $('.menu-bar');
+
+  $(window).on('scroll', function () {
+    var current_pos = $(this).scrollTop();
+
+    nav_sections.each(function () {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight() - 40;
+
+      console.log("Current Position: " + current_pos);
+
+      if (current_pos >= top && current_pos <= bottom) {
+        if (current_pos <= bottom) {
+          main_nav.find(".menu-link").removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+      }
+      if (current_pos == 40) {
+        $('html, body').scrollTop(0);
+        $(".menu-bar li:first .menu-link").addClass('active');
+      }
+
+    })
+  });
 
 
 
