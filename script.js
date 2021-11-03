@@ -29,7 +29,7 @@ $(function () {
 
 
 
-  // ------- Header showing and hide funcation
+  // ------- Header showing and hide funcation -----------
   var pagescroll = window.pageYOffset;
 
   $(window).scroll(function () {
@@ -46,7 +46,6 @@ $(function () {
         document.getElementById('header').style.top = "-80px";
         $('#header').removeClass('header-scrolled');
       }
-
       pagescroll = currentscroll;
     }
   });
@@ -65,6 +64,17 @@ $(function () {
     }
   });
 
+
+
+  // ========= mobile Menu Toggle ================
+
+  $('.mobile-nav-toggle').click(function (e) {
+    e.preventDefault();
+    console.log("click mobile toggle");
+    $(this).toggleClass('bx-menu');
+    $(this).toggleClass('bx-x');
+    $('.menu-bar').toggleClass('navbar-mobile');
+  });
 
 
 
