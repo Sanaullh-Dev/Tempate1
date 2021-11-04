@@ -38,6 +38,7 @@ $(function () {
       if ($(this).scrollTop() < 100) {
         $('#header').removeClass('header-scrolled');
       }
+
       else if (pagescroll > currentscroll) {
         document.getElementById('header').style.top = "0";
         $('#header').addClass('header-scrolled');
