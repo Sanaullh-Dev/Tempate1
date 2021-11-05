@@ -299,16 +299,6 @@ h4 {
   width: 100%;
 }
 
-/* .navbar-mobile ul li.dropdown-show,
-.menu-bar .menu-link.active {
-  background-color: var(--primary);
-  color: #fff;
-} */
-/* .navbar-mobile ul li.dropdown-show a,
-.navbar-mobile ul .active {
-  color: #fff;
-} */
-
 .navbar-mobile ul li:hover {
   background-color: var(--primary);
 }
@@ -464,8 +454,6 @@ h4 {
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .about .content h4 {
