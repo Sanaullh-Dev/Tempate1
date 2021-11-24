@@ -2,7 +2,7 @@
   --background: #ffffff;
   --textcolor: #012970;
   --primary: #4154f1;
-  --primaryfouce: #5969f3;
+  --primaryfocus: #5969f3;
   --headingText: #929296;
   --btnBg: #4154f1;
   --foreground: #f6f9ff;
@@ -96,7 +96,7 @@ h4 {
 }
 
 #header .logo img {
-  height: 40px  ;
+  height: 40px;
   margin-right: 10px;
 }
 
@@ -237,7 +237,7 @@ h4 {
 .menu-bar .getStarted:hover {
   text-decoration: none;
   color: var(--background);
-  background-color: var(--primaryfouce);
+  background-color: var(--primaryfocus);
 }
 
 /* ======== Mobile Navigation ============= */
@@ -426,7 +426,7 @@ h4 {
 /* ================== Section ================== */
 
 #main section {
-  padding: 80px 0px;
+  padding: 80px 0px;  
   overflow: hidden;
 }
 
